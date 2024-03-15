@@ -360,6 +360,7 @@ white-space: nowrap;
     background-color: rgba(0, 238, 255, 0.055);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    color: red;
 }
 
 
