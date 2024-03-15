@@ -1,53 +1,38 @@
-function navbarEinAusKlappen() {
-    const navbar = document.getElementById("nav-bar-container");
-    const navbarButton = document.getElementById("nav-bar-button");
-    const startseitenIcon = document.getElementById("startseiten-icon");
-    const startSeitenHaubtContainer = document.getElementById("start-seiten-haupt-container");
-    const dateinicon = document.getElementById("datein-icon");
+function bestätigen() {
 
-    const computedStyleNavbar = window.getComputedStyle(navbar);
-    
+    const inputPassword = document.getElementById("password-input").value;
 
+    const storedPassword = "iservAdmin";
 
-    if (computedStyleNavbar.left === "0px") {
-        navbar.style.left = "-260px";
-        navbarButton.style.left = "-258px";
-        startseitenIcon.style.left = "40px";
-        startSeitenHaubtContainer.style.width = "calc(98svw - 20px)";
-        startSeitenHaubtContainer.style.marginLeft = "20px";
-        startSeitenHaubtContainer.style.transition = "0.4s ease-in-out";  
-        dateinicon.style.left="165px"
+    console.log("Eingabedaten:",password-input);
+    console.log("Gespeicherte Daten:",storedPassword);
+
+    if (inputPassword === storedPassword) {
+        
+        console.log("Daten stimmen überein");
 
         setTimeout(() => {
-            startSeitenHaubtContainer.style.transition = "0s";
-        }, 400);
-
+            window.location.href = "index.html";
+        }, 1200);
+       
     } else {
-        navbar.style.left = "0px";
-        navbarButton.style.left = "0px";
-        startseitenIcon.style.left = "300px";
-        startSeitenHaubtContainer.style.width = "calc(98svw - 265px)";
-        startSeitenHaubtContainer.style.marginLeft = "263px";
-        startSeitenHaubtContainer.style.transition = "0.4s ease-in-out";
-        dateinicon.style.left="430px"
-
-        setTimeout(() => {
-            startSeitenHaubtContainer.style.transition = "0s";
-            
-        }, 400);
+        console.log("Daten stimmen nicht überein");
+        console.log("Daten stimmen überein");
     }
-
-
 }
 
+
+
+
+const bestätigungsContainer =document.getElementById("zurücksetzen-bestätigungs-container")
+bestätigungsContainer.style.visibility = "hidden";
+
 function profilZurücksetzenBesätigung(){
-    
-    const bestätigungsContainer =document.getElementById("zurücksetzen-bestätigungs-container")
     
     if(bestätigungsContainer.style.visibility === "hidden"){
 
         bestätigungsContainer.style.visibility = "visible";
     }else{
-        bestätigungsContainer.style.visibility = "hidden"
+        bestätigungsContainer.style.visibility = "hidden";
     }
 }
