@@ -422,6 +422,7 @@ z-index: 0;
     position: relative;
     margin-left: 10px;
     bottom: 7px;
+    color: red;
 }
 
 #stundenplan {
