@@ -451,8 +451,19 @@ white-space: nowrap;
     color: white;
     outline: none;
     text-align: center;
-    transition: ease-out 0.3s ;
 }
+
+#password-input::placeholder{
+    color: rgba(88, 188, 196, 0.918);
+}
+
+#password-falsch-text{
+    font-size: 12px;
+    margin-left: 125px;
+    color: rgb(219, 31, 31);
+    visibility: hidden;
+}
+
 
 #bestätigen-button{
     cursor: pointer;
@@ -466,17 +477,16 @@ white-space: nowrap;
     background-color: rgba(0, 225, 255, 0.13);
     outline: none;
     color: rgba(255, 255, 255, 0.712);
+    transition: ease-in-out 0.4s;
+ 
 }
 
 #bestätigen-button:hover{
     box-shadow: 0px 0px 15px rgba(0, 217, 255, 0.644);
     transform: scale(102%);
-    transition: ease-in 0.4s;
 }
 
-#password-input::placeholder{
-    color: rgba(88, 188, 196, 0.918);
-}
+
 
 #datein-container{
     border: solid 1px grey;
