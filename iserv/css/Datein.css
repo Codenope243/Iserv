@@ -413,8 +413,8 @@ white-space: nowrap;
 
 #zurücksetzen-bestätigungs-container{
     position: absolute;
-    margin-top: 200px;
-    margin-left: 700px;
+    margin-top: 19vh;
+    margin-left: 31vw;
     width: 350px;
     height: 280px;
     background-color: rgba(0, 247, 255, 0.144);
