@@ -3,7 +3,7 @@ function navbarEinAusKlappen() {
     const navbarButton = document.getElementById("nav-bar-button");
     const startseitenIcon = document.getElementById("startseiten-icon");
     const startSeitenHaubtContainer = document.getElementById("start-seiten-haupt-container");
-    const emailIcon = document.getElementById("e-mail-icon");
+    const dateinIcon = document.getElementById("datein-icon");
 
     const computedStyleNavbar = window.getComputedStyle(navbar);
     
@@ -16,7 +16,7 @@ function navbarEinAusKlappen() {
         startSeitenHaubtContainer.style.width = "calc(98svw - 20px)";
         startSeitenHaubtContainer.style.marginLeft = "20px";
         startSeitenHaubtContainer.style.transition = "0.4s ease-in-out";  
-        emailIcon.style.left="165px";
+        dateinIcon.style.left="165px";
 
         setTimeout(() => {
             startSeitenHaubtContainer.style.transition = "0s";
@@ -29,7 +29,7 @@ function navbarEinAusKlappen() {
         startSeitenHaubtContainer.style.width = "calc(98svw - 265px)";
         startSeitenHaubtContainer.style.marginLeft = "263px";
         startSeitenHaubtContainer.style.transition = "0.4s ease-in-out";
-        emailIcon.style.left="425px";
+        dateinIcon.style.left="425px";
 
         setTimeout(() => {
             startSeitenHaubtContainer.style.transition = "0s";
@@ -47,7 +47,7 @@ function navbarEinAusKlappen() {
 const bestätigungsContainer =document.getElementById("zurücksetzen-bestätigungs-container")
 const passwordText = document.getElementById("password-falsch-text");
 const dateiGröße = document.getElementsByClassName("datei-größe");
-const bestaätigungsButton = document.getElementById("bestätigen-button")
+const bestätigungsButton = document.getElementById("bestätigen-button")
 
 
 function bestätigen() {
@@ -78,7 +78,7 @@ function bestätigen() {
         passwordText.style.color="green";
 
         bestätigungsContainer.style.visibility = "hidden";
-        bestaätigungsButton.style.transition="0s";
+        bestätigungsButton.style.transition="0s";
         passwordText.style.visibility="hidden";
     
              for (let i =0; i < dateiGröße.length; i++){
@@ -109,10 +109,8 @@ function profilZurücksetzenBesätigung(){
     
     
     if(bestätigungsContainer.style.visibility === "hidden"){
-        bestaätigungsButton.style.transition="0.4s";
         bestätigungsContainer.style.visibility = "visible";
     }else{
-        bestaätigungsButton.style.transition="0s";
         bestätigungsContainer.style.visibility = "hidden";
         passwordText.style.visibility="hidden";
     }

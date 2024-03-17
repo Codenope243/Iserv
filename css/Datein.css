@@ -489,7 +489,6 @@ white-space: nowrap;
 
 
 #datein-container{
-    border: solid 1px grey;
     height: 80%;
     margin-top: 20px;
 }
@@ -520,19 +519,31 @@ white-space: nowrap;
 
 
 #datein-container table{
-    border: solid 1px grey;
     width: 99%;
     margin: 10px;
     padding: 10px;
 }
 
 table{
-    border-spacing: 0px;
+    border-spacing: 0px 25px;
 }
  
+tr{ 
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 4px 5px black;
+}
+
 td{
-    border: solid 1px grey;
     text-align: center;
+    border-radius: 0px;
+}
+
+.datum{
+    border-radius: 0px 50px 50px 0px;
+}
+
+.checkbox{
+    border-radius:50px 0px 0px 50px ;
 }
 
 .datein-name{
@@ -547,7 +558,7 @@ padding-left: 9%;
 }
 
 th{
-    border: solid 1px grey;
+ border-radius: 0px;
 }
 /* hier sind die anpassungen an verschidenne bildschirme*/
 
