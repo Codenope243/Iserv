@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    margin: 0;
+    background: linear-gradient(45deg, #063250, #184199, #165bc4);
+    font-family: 'Varela Round', sans-serif;
+    overflow: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin:auto;
+    padding-right: 110px;
+    padding-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:rgba(255, 255, 255, 0.075);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.281) ;
+}
+
+input,button{
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 130%;
+    background-color: rgba(255, 255, 255, 0.034);
+    backdrop-filter: blur(50px);
+    outline: none;
+    box-shadow: 0px 0px 2px black;
+    
+}
+
+button{
+    margin-left: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.349);
+    padding: 10px;
+    color: rgba(137, 137, 192, 0.76);
+    transition: ease-in-out 0.25s;
+}
+
+button:hover{
+transform: scale(110%);
+}
+
+#login-erfolgreich{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(0, 228, 0);
+    bottom: 80%;
+    color: rgb(235, 235, 235);
+    top: -8%;
+    transition: ease-in-out 0.5s;
+}
+
+#login-fehlgeschlagen{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    bottom: 80%;
+    color: rgb(235, 235, 235);
+    top: -8%;
+    transition: ease-in-out 0.5s;
+}
+
+/*Mobile*/
+@media screen and (max-width:767px) {
+
+    #login-erfolgreich{
+       width: 90%;
+    }
+
+    #login-fehlgeschlagen{
+       width: 90%;
+    }
+
+
+}
