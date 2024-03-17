@@ -33,7 +33,6 @@ function bestätigen() {
 
         bestätigungsContainer.style.visibility = "hidden";
         bestaätigungsButton.style.transition="0s";
-        bestaätigungsButton.style.visibility="hidden;"
         passwordText.style.visibility="hidden";
     
              for (let i =0; i < dateiGröße.length; i++){
@@ -64,9 +63,10 @@ function profilZurücksetzenBesätigung(){
     
     
     if(bestätigungsContainer.style.visibility === "hidden"){
-
+        bestaätigungsButton.style.transition="0.4s";
         bestätigungsContainer.style.visibility = "visible";
     }else{
+        bestaätigungsButton.style.transition="0s";
         bestätigungsContainer.style.visibility = "hidden";
         passwordText.style.visibility="hidden";
     }
