@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iserv</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="x-icon" href="bilder/tap icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="body">
+
+
+<div id="nav-bar-container">
+
+    <div id="nav-bar-header">
+        <img id="iserv-logo" src="bilder/iserv-logo-weiß.svg">
+        <span id="nav-bar-überschrift">Gesamtschule Hörstel</span>
+    </div>
+
+        <details id="account-details">
+
+            <summary>
+                <img id="profile-bild" src="bilder/user icon .png">
+                <span id="username">mr_crash</span> 
+                <img id="dropdown-pfeil-bild" src="bilder/dropdown-pfeil.png">
+
+            </summary>
+            
+            <div id="underline" >
+
+            </div>
+
+            <a><img src="bilder/Pfrofile bild.png" ><span>profile</span></a>
+            <a><img src="bilder/benachrichtigung icon.png"><span>Benachrichtigungen</span></a>
+            <a><img src="bilder/einstellungen icon.png"> <span>Einstellungen</span></a>
+            <a><img src="bilder/sicherheit icon.png"> <span>Sicherheit</span></a>
+            <p></p>
+            <a href="login.html" ><img src="bilder/ausloggen icon.png"><span>Abmelden</span></a>
+
+        </details>
+
+        <input  id="modul-suchfeld" type="search" placeholder="Module filtern" onkeyup="search()">
+   
+        <span id="Schnellzugriff-überschrift">Schnellzugriff</span>
+
+        <a class="link-container" data-name="emal-link-container" href="E-mail.html"> <img src="bilder/email.png"><span>E-mail</span></a>
+        <a class="link-container" href="Datein.html"> <img src="bilder/datein.png"><span>Datein</span></a>
+        <a class="link-container" href=""> <img src="bilder/kalender.png"><span>kalender</span></a>
+        <a class="link-container" href=""> <img src="bilder/messenger.png"><span>Messenger</span></a>
+        <a class="link-container" href="StundenPlan.html"> <img src="bilder/stundenplan.png"><span>Stundenplan</span></a>
+        <a class="link-container" href=""> <img src="bilder/hilfe.png"><span>IServ-Hilfe</span></a>
+
+       <details id="alle-module">
+
+         <summary>
+            <span>Alle Module</span>
+         </summary>
+
+          <a class="link-container" href=""><img src="bilder/fernglas.png"><span>09 Studien-und Berufsorientierung</span></a>
+          <a class="link-container" href=""><img src="bilder/adressbuch.png"><span>Adressbuch</span></a>
+          <a class="link-container" href=""><img src="bilder/aufgabe.png"><span>Aufgaben</span></a>
+          <a class="link-container" href=""><img src="bilder/bildunglogin.png"><span>Bildungslogin</span></a>
+          <a class="link-container" href=""><img src="bilder/Bildungsmediathek.png"><span>Bildungsmediathek</span></a>
+          <a class="link-container" href=""><img src="bilder/drucker.png"><span>Drucken</span></a>
+          <a class="link-container" href=""><img src="bilder/forum.png"><span>Foren</span></a>
+          <a class="link-container" href=""><img src="bilder/gruppen-E-Mail.png"><span>Gruppen-E-Mail</span></a>
+          <a class="link-container" href=""><img src="bilder/Kurswahl.png"><span>Kurswahl</span></a>
+          <a class="link-container" href=""><img src="bilder/mundo.png"><span>Mundo</span></a>
+          <a class="link-container" href=""><img src="bilder/news.png"><span>News</span></a>
+          <a class="link-container" href=""><img src="bilder/office.png"><span>Office</span></a>
+          <a class="link-container" href=""><img src="bilder/ruckmeldung.png"><span>Rückmeldung</span></a>
+          <a class="link-container" href=""><img src="bilder/schulregeln.png"><span>Schulregeln</span></a>
+          <a class="link-container" href=""><img src="bilder/soccerfeldplan.png"><span>Soccerfeldplan 2023</span></a>
+          <a class="link-container" href=""><img src="bilder/tafel.png"><span>Tafel</span></a>
+          <a class="link-container" href=""><img src="bilder/texte.png"><span>Texte</span></a>
+          <a class="link-container" href=""><img src="bilder/umfragen.png"><span>Umfragen</span></a>
+          <a class="link-container" href=""><img src="bilder/videokonferenz.png"><span>Videokonferenzen</span></a>
+
+       </details>
+
+       <a id="impressum-link" href="impressum.html">Impressum</a>
+
+    </div>
+
+     <div id="nav-bar-container-top">
+
+        <button onclick="navbarEinAusKlappen()" id="nav-bar-button">
+            <img src="bilder/hamburger menu.png">
+        </button>
+  
+          <a id="startseiten-icon" href="index.html">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi43MDcxIDQuMTIxMjZDMTIuMzE2NiAzLjczMDc0IDExLjY4MzQgMy43MzA3NCAxMS4yOTI5IDQuMTIxMjZMMi43MDcxMSAxMi43MDdDMi4zMTY1OCAxMy4wOTc2IDEuNjgzNDIgMTMuMDk3NiAxLjI5Mjg5IDEyLjcwN0MwLjkwMjM2OSAxMi4zMTY1IDAuOTAyMzY5IDExLjY4MzQgMS4yOTI4OSAxMS4yOTI4TDkuODc4NjggMi43MDcwNUMxMS4wNTAzIDEuNTM1NDcgMTIuOTQ5NyAxLjUzNTQ4IDE0LjEyMTMgMi43MDcwNUwxOCA2LjU4NTczVjMuOTk5OTRDMTggMy40NDc2NiAxOC40NDc3IDIuOTk5OTQgMTkgMi45OTk5NEMxOS41NTIzIDIuOTk5OTQgMjAgMy40NDc2NiAyMCAzLjk5OTk0VjguNTg1NzNMMjIuNzA3MSAxMS4yOTI4QzIzLjA5NzYgMTEuNjgzNCAyMy4wOTc2IDEyLjMxNjUgMjIuNzA3MSAxMi43MDdDMjIuMzE2NiAxMy4wOTc2IDIxLjY4MzQgMTMuMDk3NiAyMS4yOTI5IDEyLjcwN0wxMi43MDcxIDQuMTIxMjZaIiBmaWxsPSIjMUE5OEZGIi8+CjxwYXRoIGQ9Ik0xMS4yOTI5IDUuNzA3Mkw0LjU4NTc5IDEyLjQxNDNDNC4yMTA3MSAxMi43ODk0IDQgMTMuMjk4MSA0IDEzLjgyODVWMjAuMDAwMUM0IDIxLjEwNDcgNC44OTU0MyAyMi4wMDAxIDYgMjIuMDAwMUgxOEMxOS4xMDQ2IDIyLjAwMDEgMjAgMjEuMTA0NyAyMCAyMC4wMDAxVjEzLjgyODVDMjAgMTMuMjk4MSAxOS43ODkzIDEyLjc4OTQgMTkuNDE0MiAxMi40MTQzTDEyLjcwNzEgNS43MDcyQzEyLjMxNjYgNS4zMTY2OCAxMS42ODM0IDUuMzE2NjggMTEuMjkyOSA1LjcwNzJaIiBmaWxsPSIjOTlEMUZGIi8+Cjwvc3ZnPgo="><img src="bilder/doppel pfeil rechts.png">
+            <span>Startseite</span>
+          </a>
+
+          <a href="https://doku.iserv.de/web/" id="hilfe-button">Hilfe</a>
+
+     </div>
+ 
+
+    <div id="start-seiten-haupt-container">
+
+      <div id="E-mail-und-news-container">
+
+        <div id="E-mail-container">
+              <div id="E-mail-contaier-header">
+                   <p id="E-mail-überschrift">
+                    <img src="bilder/email offen.png">
+                    <span>E-mails</span>
+                   </p>
+              </div>
+
+                <span id="E-mail-status-nachricht">- Es befindet sich keine ungelesene E-Mail im Posteingang -</span>
+
+              <a id="E-mails-senden-und-empfangen-link" href="E-mail.html">
+                 <img src="bilder/e-mail senden.png"> 
+                 <span>E-mails senden und empfangen</span>
+              </a>
+        </div>
+
+
+        <div id="news-container">
+
+            <div id="news-container-header">
+                <p id="news-überschrift">
+                   <img src="bilder/newsletter.png">
+                   <span>Newsletter</span>
+                </p>
+            </div>
+
+            <span id="newsletter-status-nachricht">-kein Newsletter verfügbar-</span>
+
+        </div>
+
+      </div>
+
+      <div id="stundenplan-container">
+  
+        <div id="stundenplan-header">
+          <p id="stundenplan-überschrift">
+            <img src="bilder/stundenplan header icon.png">
+            <span>Stundenplan</span>
+          </p>
+        </div>
+
+        <!--table - TABLE-->
+        <!--td - TABELE DATA-->
+        <!--tr - TABLE ROW-->
+        <!--th - TABLE HEADERS-->
+
+        <table id="stundenplan">
+
+          <p id="stundenplan-tag">Montag 03.02.2024</p>
+
+         <tr>
+           <th>Stunde</th>
+           <th>zeit</th>
+           <th>Unterricht</th>
+          </tr>
+
+          <!--stunde 1-->
+          <tr>
+          <td class="stunde" id="stunde1">1</td>
+          <td class="stunden-uhr-zeit" >8:15Uhr-<br>9:15Uhr</td>
+          <td class="stundenplan-daten">
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">ER</span>
+              <span class="lehrer">(Blo)</span>
+              <span class="raum">0.80 9b</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">KR</span>
+              <span class="lehrer">(BEC)</span>
+              <span class="raum">1.160 10f</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">KR</span>
+              <span class="lehrer">(BRE)</span>
+              <span class="raum">0.82 9d</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">KR</span>
+              <span class="lehrer">(HSE)</span>
+              <span class="raum">0.79 9a</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">PP</span>
+              <span class="lehrer">(GUT)</span>
+              <span class="raum">0.81 9e</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">PP</span>
+              <span class="lehrer">(SUM)</span>
+              <span class="raum">0.83 9e</span>
+            </span>
+          </td>
+         </tr>
+
+         <!--stunde2-->
+         <tr>
+          <td class="stunde" id="stunde2">2</td>
+          <td class="stunden-uhr-zeit">9:20Uhr-<br>10:20Uhr</td>
+          <td class="stundenplan-daten">
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">M-E</span>
+              <span class="lehrer">(DTZ)</span>
+              <span class="raum">0.80 9b</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">M-E</span>
+              <span class="lehrer">(KRE)</span>
+              <span class="raum">1.148 10f</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">M-E</span>
+              <span class="lehrer">(LIN)</span>
+              <span class="raum">2.152 Q1</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">M-E</span>
+              <span class="lehrer">(VEE)</span>
+              <span class="raum">0.83 9e</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">M-G</span>
+              <span class="lehrer">(BRE)</span>
+              <span class="raum">0.82 9d</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">M-G</span>
+              <span class="lehrer">(GOR)</span>
+              <span class="raum">0.81 9c</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">M-G</span>
+              <span class="lehrer">(LMB)</span>
+              <span class="raum">0.79 9a</span>
+            </span>
+          </td>
+         </tr>
+
+         <!--stunde 3-->
+         <tr>
+          <td class="stunde" id="stunde3">3</td>
+          <td class="stunden-uhr-zeit">10:40Uhr-<br>11:40Uhr</td>
+          <td class="stundenplan-daten">
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">D-E</span>
+              <span class="lehrer">(BRN)</span>
+              <span class="raum">0.81 9c</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">D-E</span>
+              <span class="lehrer">(DOE)</span>
+              <span class="raum">0.82 9d</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">D-E</span>
+              <span class="lehrer">(HAC)</span>
+              <span class="raum">0.80 9b</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">D-E</span>
+              <span class="lehrer">(STG)</span>
+              <span class="raum">1.148 Q1</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">D-G</span>
+              <span class="lehrer">(APK)</span>
+              <span class="raum">0.79 9a</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">D-G</span>
+              <span class="lehrer">(BRC)</span>
+              <span class="raum">1.160 10f</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">D-G</span>
+              <span class="lehrer">(GRE)</span>
+              <span class="raum">0.83 9e</span>
+            </span>
+          </td>
+         </tr>
+
+         <!--stunde 4-->
+         <tr>
+          <td class="stunde" id="stunde4">4</td>
+          <td class="stunden-uhr-zeit">11:45Uhr-<br>12:45Uhr</td>
+          <td class="stundenplan-daten">
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">CH-E</span>
+              <span class="lehrer">(AER)</span>
+              <span class="raum">1.54 PH</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">CH-E</span>
+              <span class="lehrer">(NOW)</span>
+              <span class="raum">2.55 Ch</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">Ch-E</span>
+              <span class="lehrer">(SCO)</span>
+              <span class="raum">2.54 Ch</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">CH-G</span>
+              <span class="lehrer">(PLU)</span>
+              <span class="raum">1.62 PH</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">CH-G</span>
+              <span class="lehrer">(TSC)</span>
+              <span class="raum">1.62 NW</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">CH-G</span>
+              <span class="lehrer">(UHL)</span>
+              <span class="raum">2.60 CH</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">Ch-G</span>
+              <span class="lehrer">(WSL)</span>
+              <span class="raum">1.55 PH</span>
+            </span>
+          </td>
+         </tr>
+
+         <!--stunde 6-->
+         <tr>
+          <td class="stunde" id="stunde6">6</td>
+          <td class="stunden-uhr-zeit">13:45Uhr-<br>14:45Uhr</td>
+          <td class="stundenplan-daten">
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-E</span>
+              <span class="lehrer">(BIC)</span>
+              <span class="raum">0.79 9a</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-E</span>
+              <span class="lehrer">(BLO)</span>
+              <span class="raum">0.79 9a</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-E</span>
+              <span class="lehrer">(DOG)</span>
+              <span class="raum">2.159 EF</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-E</span>
+              <span class="lehrer">(MUC)</span>
+              <span class="raum">0.81 9c</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-E</span>
+              <span class="lehrer">(TIM)</span>
+              <span class="raum">0.82 9d</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-G</span>
+              <span class="lehrer">(ALM)</span>
+              <span class="raum">0.83 9e</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-G</span>
+              <span class="lehrer">(COR)</span>
+              <span class="raum">2.147 Q2</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-G</span>
+              <span class="lehrer">(HAC)</span>
+              <span class="raum">0.80 9b</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">E-G</span>
+              <span class="lehrer">(SCL)</span>
+              <span class="raum">2.152 Q1</span>
+            </span>
+          </td>
+         </tr>
+
+         <!--stunde 7-->
+         <tr>
+          <td class="stunde" id="stunde7">7</td>
+          <td class="stunden-uhr-zeit">14:45Uhr-<br>15:45Uhr</td>
+          <td class="stundenplan-daten">
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">EGS FfJ</span>
+              <span class="lehrer">(STT)</span>
+              <span class="raum">0.83 9e</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">EGS GGS</span>
+              <span class="lehrer">(COR)</span>
+              <span class="raum">2.75 if2</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">EGS IF 1</span>
+              <span class="lehrer">(ANG)</span>
+              <span class="raum">1.64 IF</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">EGS L</span>
+              <span class="lehrer">(GUT)</span>
+              <span class="raum">1.157</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">EGS NW Bili</span>
+              <span class="lehrer">(HOl)</span>
+              <span class="raum">0.81 9c</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">EGS PÄ</span>
+              <span class="lehrer">(STG)</span>
+              <span class="raum">0.82 9d</span>
+            </span>
+            <br>
+            <span>
+              <span class="class">09d</span>
+              <span class="abkürzung">EGS SP</span>
+              <span class="lehrer">(KEM)</span>
+              <span class="raum">HSH2</span>
+            </span>
+          </td>
+         </tr>
+          
+
+        </table>
+
+
+        <div id="klausur-termine-container">
+            <div id="klausur-termine-header">
+              <img src="bilder/klausur.png">
+              <span>Klausur Termine</span>
+            </div>
+           
+            <span id="klausur-status-nachricht">Es stehen keine klausuren an</span>
+
+        </div>
+
+        <div id="termine-container">
+          <div id="termine-container-header">
+            <img src="bilder/kalender.png">
+            <p><span>Termine</span></p>
+          </div>
+          <span id="termine-status-nachricht">-Es stehen keine Termine in den nächsten 14Tagen an-</span>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+</div> 
+
+<script src="javaScript/index.js"></script>
+</body>
+</html>

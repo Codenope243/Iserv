@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iserv</title>
+    <link rel="stylesheet" href="css/Datein.css">
+    <link rel="shortcut icon" type="x-icon" href="bilder/tap icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="body">
+
+
+<div id="nav-bar-container">
+
+    <div id="nav-bar-header">
+        <img id="iserv-logo" src="bilder/iserv-logo-weiß.svg">
+        <span id="nav-bar-überschrift">Gesamtschule Hörstel</span>
+    </div>
+
+        <details id="account-details">
+
+            <summary>
+                <img id="profile-bild" src="bilder/user icon .png">
+                <span id="username">mr_crash</span> 
+                <img id="dropdown-pfeil-bild" src="bilder/dropdown-pfeil.png">
+
+            </summary>
+            
+            <div id="underline" >
+
+            </div>
+
+            <a><img src="bilder/Pfrofile bild.png" ><span>profile</span></a>
+            <a><img src="bilder/benachrichtigung icon.png"><span>Benachrichtigungen</span></a>
+            <a><img src="bilder/einstellungen icon.png"> <span>Einstellungen</span></a>
+            <a><img src="bilder/sicherheit icon.png"> <span>Sicherheit</span></a>
+            <p></p>
+            <a href="login.html" ><img src="bilder/ausloggen icon.png"><span>Abmelden</span></a>
+
+        </details>
+
+        <input  id="modul-suchfeld" type="search" placeholder="Module filtern" onkeyup="search()">
+   
+        <span id="Schnellzugriff-überschrift">Schnellzugriff</span>
+
+        <a class="link-container" data-name="emal-link-container" href="E-mail.html"> <img src="bilder/email.png"><span>E-mail</span></a>
+        <a class="link-container" href=""> <img src="bilder/datein.png"><span>Datein</span></a>
+        <a class="link-container" href=""> <img src="bilder/kalender.png"><span>kalender</span></a>
+        <a class="link-container" href=""> <img src="bilder/messenger.png"><span>Messenger</span></a>
+        <a class="link-container" href="StundenPlan.html"> <img src="bilder/stundenplan.png"><span>Stundenplan</span></a>
+        <a class="link-container" href=""> <img src="bilder/hilfe.png"><span>IServ-Hilfe</span></a>
+
+       <details id="alle-module">
+
+         <summary>
+            <span>Alle Module</span>
+         </summary>
+
+          <a class="link-container" href=""><img src="bilder/fernglas.png"><span>09 Studien-und Berufsorientierung</span></a>
+          <a class="link-container" href=""><img src="bilder/adressbuch.png"><span>Adressbuch</span></a>
+          <a class="link-container" href=""><img src="bilder/aufgabe.png"><span>Aufgaben</span></a>
+          <a class="link-container" href=""><img src="bilder/bildunglogin.png"><span>Bildungslogin</span></a>
+          <a class="link-container" href=""><img src="bilder/Bildungsmediathek.png"><span>Bildungsmediathek</span></a>
+          <a class="link-container" href=""><img src="bilder/drucker.png"><span>Drucken</span></a>
+          <a class="link-container" href=""><img src="bilder/forum.png"><span>Foren</span></a>
+          <a class="link-container" href=""><img src="bilder/gruppen-E-Mail.png"><span>Gruppen-E-Mail</span></a>
+          <a class="link-container" href=""><img src="bilder/Kurswahl.png"><span>Kurswahl</span></a>
+          <a class="link-container" href=""><img src="bilder/mundo.png"><span>Mundo</span></a>
+          <a class="link-container" href=""><img src="bilder/news.png"><span>News</span></a>
+          <a class="link-container" href=""><img src="bilder/office.png"><span>Office</span></a>
+          <a class="link-container" href=""><img src="bilder/ruckmeldung.png"><span>Rückmeldung</span></a>
+          <a class="link-container" href=""><img src="bilder/schulregeln.png"><span>Schulregeln</span></a>
+          <a class="link-container" href=""><img src="bilder/soccerfeldplan.png"><span>Soccerfeldplan 2023</span></a>
+          <a class="link-container" href=""><img src="bilder/tafel.png"><span>Tafel</span></a>
+          <a class="link-container" href=""><img src="bilder/texte.png"><span>Texte</span></a>
+          <a class="link-container" href=""><img src="bilder/umfragen.png"><span>Umfragen</span></a>
+          <a class="link-container" href=""><img src="bilder/videokonferenz.png"><span>Videokonferenzen</span></a>
+
+       </details>
+
+       <a id="impressum-link" href="impressum.html">Impressum</a>
+
+    </div>
+
+     <div id="nav-bar-container-top">
+
+        <button onclick="navbarEinAusKlappen()" id="nav-bar-button">
+            <img src="bilder/hamburger menu.png">
+        </button>
+  
+          <a id="startseiten-icon" href="index.html">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi43MDcxIDQuMTIxMjZDMTIuMzE2NiAzLjczMDc0IDExLjY4MzQgMy43MzA3NCAxMS4yOTI5IDQuMTIxMjZMMi43MDcxMSAxMi43MDdDMi4zMTY1OCAxMy4wOTc2IDEuNjgzNDIgMTMuMDk3NiAxLjI5Mjg5IDEyLjcwN0MwLjkwMjM2OSAxMi4zMTY1IDAuOTAyMzY5IDExLjY4MzQgMS4yOTI4OSAxMS4yOTI4TDkuODc4NjggMi43MDcwNUMxMS4wNTAzIDEuNTM1NDcgMTIuOTQ5NyAxLjUzNTQ4IDE0LjEyMTMgMi43MDcwNUwxOCA2LjU4NTczVjMuOTk5OTRDMTggMy40NDc2NiAxOC40NDc3IDIuOTk5OTQgMTkgMi45OTk5NEMxOS41NTIzIDIuOTk5OTQgMjAgMy40NDc2NiAyMCAzLjk5OTk0VjguNTg1NzNMMjIuNzA3MSAxMS4yOTI4QzIzLjA5NzYgMTEuNjgzNCAyMy4wOTc2IDEyLjMxNjUgMjIuNzA3MSAxMi43MDdDMjIuMzE2NiAxMy4wOTc2IDIxLjY4MzQgMTMuMDk3NiAyMS4yOTI5IDEyLjcwN0wxMi43MDcxIDQuMTIxMjZaIiBmaWxsPSIjMUE5OEZGIi8+CjxwYXRoIGQ9Ik0xMS4yOTI5IDUuNzA3Mkw0LjU4NTc5IDEyLjQxNDNDNC4yMTA3MSAxMi43ODk0IDQgMTMuMjk4MSA0IDEzLjgyODVWMjAuMDAwMUM0IDIxLjEwNDcgNC44OTU0MyAyMi4wMDAxIDYgMjIuMDAwMUgxOEMxOS4xMDQ2IDIyLjAwMDEgMjAgMjEuMTA0NyAyMCAyMC4wMDAxVjEzLjgyODVDMjAgMTMuMjk4MSAxOS43ODkzIDEyLjc4OTQgMTkuNDE0MiAxMi40MTQzTDEyLjcwNzEgNS43MDcyQzEyLjMxNjYgNS4zMTY2OCAxMS42ODM0IDUuMzE2NjggMTEuMjkyOSA1LjcwNzJaIiBmaWxsPSIjOTlEMUZGIi8+Cjwvc3ZnPgo="><img src="bilder/doppel pfeil rechts.png">
+            <span>Startseite</span>
+          </a>
+
+          <a id="datein-icon" href="#">
+            <img src="bilder/doppel pfeil rechts.png" >
+            <span>Datein</span>
+          </a>
+
+
+          <a href="https://doku.iserv.de/web/" id="hilfe-button">Hilfe</a>
+
+     </div>
+
+     <div id="start-seiten-haupt-container">
+
+          <div id="datein-header">
+             
+            <a class="datein-header-link-container" href="">
+                <img src="bilder/ordner.png">
+                <span>Eigene</span>
+            </a>
+
+            <a class="datein-header-link-container" href="">
+                <img src="bilder/gruppen ordner.png">
+                <span>Gruppen</span>
+            </a>
+
+            <a class="datein-header-link-container" href="">
+                <img src="bilder/cloud-ordner.png">
+                <span>Cloud</span>
+            </a>
+
+          </div>
+
+         
+           <div id="datein-hader2">
+
+            <details id="Hinzufügen-dropdown-menu">
+
+             <summary>
+                   <img id="hinzufügen-plus-bild" src="bilder/plus.png">
+                   <span>Hinzufügen</span>
+             </summary>
+
+             <a class="link-container" href=""><img src="bilder/schulregeln.png"><span>Hochladen</span></a>
+             <a class="link-container" href=""><img src="bilder/soccerfeldplan.png"><span>Ordner</span></a>
+             <a class="link-container" href=""><img src="bilder/tafel.png"><span>Internetlink</span></a>
+             <a class="link-container" href=""><img src="bilder/texte.png"><span>Office-Document</span></a>
+             <a class="link-container" href=""><img src="bilder/umfragen.png"><span>Office-Kalkulation</span></a>
+             <a class="link-container" href=""><img src="bilder/videokonferenz.png"><span>Office-Präsentation</span></a>
+
+
+            </details>
+
+
+            <details id="Erweitert-dropdown-menu">
+
+             <summary>
+                <span>Erweitert</span>
+             </summary>
+
+             <a onclick="profilZurücksetzenBesätigung()"><img src="bilder/zurücksetzen icon.png"><span>Windows-Profil zurücksetzen</span></a>
+
+            </details>
+           </div>
+
+
+           <div id="datein-container">
+            
+            <div id="zurücksetzen-bestätigungs-container">
+                
+            </div>
+
+            <div id="suchfeld-container">
+
+                <input id="datein-suchfeld" type="text" placeholder="In Datein suchen">
+
+            </div>
+                  
+
+               <table>
+
+                 <tr>
+                    <th><input type="checkbox"></th>
+                    <th>Name</th>
+                    <th>Größe</th>
+                    <th>Type</th>
+                    <th>Besitzer</th>
+                    <th>Letzte Änderung</th>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span>Files</span></td>
+                    <td>1.5MB</td>
+                    <td>Ordner</td>
+                    <td>mr_crash</td>
+                    <td>5.7.2024 23:46</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span>Groups</span></td>
+                    <td>9.4GB</td>
+                    <td>Ordner</td>
+                    <td>mr_crash</td>
+                    <td>6.2.2024 3:20</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span>Temp</span></td>
+                    <td>10.8MB</td>
+                    <td>Ordner</td>
+                    <td>mr_crash</td>
+                    <td>7.11.2024 10:23</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span>Windows</span></td>
+                    <td>5.5kb</td>
+                    <td>Ordner</td>
+                    <td>mr_crash</td>
+                    <td>4.9.2024 8:50</td>
+                </tr>
+
+             
+
+
+
+
+               </table>
+
+           </div>
+
+     </div>
+
+     <script src="javaScript/datein.js"></script>
+    </body>
+    </html>
