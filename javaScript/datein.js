@@ -3,7 +3,7 @@ function navbarEinAusKlappen() {
     const navbarButton = document.getElementById("nav-bar-button");
     const startseitenIcon = document.getElementById("startseiten-icon");
     const startSeitenHaubtContainer = document.getElementById("start-seiten-haupt-container");
-    const dateinIcon = document.getElementById("datein-icon");
+    const emailIcon = document.getElementById("e-mail-icon");
 
     const computedStyleNavbar = window.getComputedStyle(navbar);
     
@@ -16,7 +16,7 @@ function navbarEinAusKlappen() {
         startSeitenHaubtContainer.style.width = "calc(98svw - 20px)";
         startSeitenHaubtContainer.style.marginLeft = "20px";
         startSeitenHaubtContainer.style.transition = "0.4s ease-in-out";  
-        dateinIcon.style.left="165px";
+        emailIcon.style.left="165px";
 
         setTimeout(() => {
             startSeitenHaubtContainer.style.transition = "0s";
@@ -29,7 +29,7 @@ function navbarEinAusKlappen() {
         startSeitenHaubtContainer.style.width = "calc(98svw - 265px)";
         startSeitenHaubtContainer.style.marginLeft = "263px";
         startSeitenHaubtContainer.style.transition = "0.4s ease-in-out";
-        dateinIcon.style.left="425px";
+        emailIcon.style.left="425px";
 
         setTimeout(() => {
             startSeitenHaubtContainer.style.transition = "0s";
