@@ -525,21 +525,41 @@ white-space: nowrap;
 }
 
 table{
-    border-spacing: 0px 25px;
+    border-spacing: 0 25px;
+    border: none;
 }
 
- 
+#datei-manager-header{
+    background-color: transparent;
+}
+
+#datei-manager-header:hover{
+    transform: scale(100%);
+}
+
 tr{ 
-    background-color: rgb(26, 26, 26);
-    box-shadow: 0px 4px 5px rgb(34, 34, 34);
-    
+    background-color: rgb(27, 27, 27);
+filter: drop-shadow( 0 0 5px rgb(15, 15, 15));
+    transition: ease-in-out 0.3s;
+}
+
+tr:hover{
+    cursor: pointer;
+    background-color: rgb(29, 29, 29);
+    filter: drop-shadow(0 0 10px rgb(46, 46, 46));
+    transform: scale(102%);
 }
 
 
 td{
     text-align: center;
     border-radius: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
+
+
+
 
 .datum{
     border-radius: 0px 50px 50px 0px;
@@ -547,6 +567,7 @@ td{
 
 .checkbox{
     border-radius:50px 0px 0px 50px ;
+    accent-color: rgb(25, 204, 228);
 }
 
 .datein-name{
