@@ -527,11 +527,14 @@ white-space: nowrap;
 table{
     border-spacing: 0px 25px;
 }
+
  
 tr{ 
     background-color: rgb(26, 26, 26);
-    box-shadow: 0px 4px 5px black;
+    box-shadow: 0px 4px 5px rgb(34, 34, 34);
+    
 }
+
 
 td{
     text-align: center;
