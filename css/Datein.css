@@ -504,17 +504,19 @@ white-space: nowrap;
 #datein-suchfeld{
     position: relative;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
     border: none;
     outline: none;
     transition: ease-in-out 0.25s;
-    z-index: 0;
+
 }
 
 #datein-suchfeld:focus{
     border: solid 1px rgb(0, 195, 255);
-   box-shadow:  0 0 25px rgb(12, 153, 235);
+   box-shadow:  0 0 20px rgb(12, 153, 235);
 }
 
 
@@ -531,6 +533,10 @@ table{
 
 #datei-manager-header{
     background-color: transparent;
+}
+
+#checkbox-alles-auswählen{
+    background-color: red;
 }
 
 #datei-manager-header:hover{
@@ -569,6 +575,8 @@ td{
     border-radius:50px 0px 0px 50px ;
     accent-color: rgb(25, 204, 228);
 }
+
+
 
 .datein-name{
 text-align: left;
