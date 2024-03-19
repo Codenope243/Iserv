@@ -48,7 +48,7 @@
    
         <span id="Schnellzugriff-überschrift">Schnellzugriff</span>
 
-        <a class="link-container" data-name="emal-link-container" href="E-mail.html"> <img src="bilder/email.png"><span>E-mail</span></a>
+        <a class="link-container" data-name="emal-link-container" href="e-mail.html"> <img src="bilder/email.png"><span>E-mail</span></a>
         <a class="link-container" href=""> <img src="bilder/datein.png"><span>Datein</span></a>
         <a class="link-container" href=""> <img src="bilder/kalender.png"><span>kalender</span></a>
         <a class="link-container" href=""> <img src="bilder/messenger.png"><span>Messenger</span></a>
@@ -108,21 +108,26 @@
 
      </div>
 
+     <!--hier enden die elementefür dienavigaions leiste-->
+
+
+     <!--ab hier begint die startseite-->
+
      <div id="start-seiten-haupt-container">
 
           <div id="datein-header">
              
-            <a class="datein-header-link-container" href="">
+            <a id="eigene-datein-button" class="datein-header-link-container" onclick="eigeneDateinEinblenden()">
                 <img src="bilder/ordner.png">
                 <span>Eigene</span>
             </a>
 
-            <a class="datein-header-link-container" href="">
+            <a id="gruppen-datein-button" class="datein-header-link-container" onclick="gruppenEinblenden()">
                 <img src="bilder/gruppen ordner.png">
                 <span>Gruppen</span>
             </a>
 
-            <a class="datein-header-link-container" href="">
+            <a id="cloud-datein-button" class="datein-header-link-container" onclick="cloudEinblenden()">
                 <img src="bilder/cloud-ordner.png">
                 <span>Cloud</span>
             </a>
@@ -194,40 +199,40 @@
                     <th>Letzte Änderung</th>
                 </tr>
          
-                <tr>
+                <tr id="files-datein-spalte">
                     <td class="checkbox"><input type="checkbox"></td>
-                    <td class="datein-name"><img src="bilder/ordner.png"><span>Files</span></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span id="files-name">Files</span></td>
                     <td class="datei-größe">1.5MB</td>
-                    <td>Ordner</td>
-                    <td>mr_crash</td>
+                    <td class="datei-type">Ordner</td>
+                    <td class="datein-besitzer" id="files-besitzer">mr_crash</td>
                     <td class="datum">5.7.2024 23:46</td>
                 </tr>
            
 
-                <tr>
+                <tr id="groups-datein-spalte">
                     <td class="checkbox"><input type="checkbox"></td>
-                    <td class="datein-name"><img src="bilder/ordner.png"><span>Groups</span></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span id="groups-name">Groups</span></td>
                     <td class="datei-größe">9.4GB</td>
-                    <td>Ordner</td>
-                    <td>mr_crash</td>
+                    <td class="datei-type">Ordner</td>
+                    <td class="datein-besitzer" id="groups-besitzer">mr_crash</td>
                     <td class="datum">6.2.2024 3:20</td>
                 </tr>
 
-                <tr>
+                <tr id="temp-datein-spalte">
                     <td class="checkbox"><input type="checkbox"></td>
-                    <td class="datein-name"><img src="bilder/ordner.png"><span>Temp</span></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span id="temp-name">Temp</span></td>
                     <td class="datei-größe">10.8MB</td>
-                    <td>Ordner</td>
-                    <td>mr_crash</td>
+                    <td class="datei-type">Ordner</td>
+                    <td class="datein-besitzer" id="temp-besitzer">mr_crash</td>
                     <td class="datum">7.11.2024 10:23</td>
                 </tr>
 
-                <tr>
+                <tr id="windows-datein-spalte">
                     <td class="checkbox"><input type="checkbox"></td>
-                    <td class="datein-name"><img src="bilder/ordner.png"><span>Windows</span></td>
+                    <td class="datein-name"><img src="bilder/ordner.png"><span id="windows-name">Windows</span></td>
                     <td class="datei-größe">5.5kb</td>
-                    <td>Ordner</td>
-                    <td>mr_crash</td>
+                    <td class="datei-type">Ordner</td>
+                    <td class="datein-besitzer" id="windows-besitzer">mr_crash</td>
                     <td class="datum">4.9.2024 8:50</td>
                 </tr>
 

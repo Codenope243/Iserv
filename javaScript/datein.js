@@ -1,11 +1,11 @@
 function navbarEinAusKlappen() {
-    const navbar = document.getElementById("nav-bar-container");
-    const navbarButton = document.getElementById("nav-bar-button");
-    const startseitenIcon = document.getElementById("startseiten-icon");
-    const startSeitenHaubtContainer = document.getElementById("start-seiten-haupt-container");
-    const dateinIcon = document.getElementById("datein-icon");
+    let navbar = document.getElementById("nav-bar-container");
+    let navbarButton = document.getElementById("nav-bar-button");
+    let startseitenIcon = document.getElementById("startseiten-icon");
+    let startSeitenHaubtContainer = document.getElementById("start-seiten-haupt-container");
+    let dateinIcon = document.getElementById("datein-icon");
 
-    const computedStyleNavbar = window.getComputedStyle(navbar);
+    let computedStyleNavbar = window.getComputedStyle(navbar);
     
 
 
@@ -44,17 +44,17 @@ function navbarEinAusKlappen() {
 
 
 
-const bestätigungsContainer =document.getElementById("zurücksetzen-bestätigungs-container")
-const passwordText = document.getElementById("password-falsch-text");
-const dateiGröße = document.getElementsByClassName("datei-größe");
-const bestätigungsButton = document.getElementById("bestätigen-button")
+let bestätigungsContainer =document.getElementById("zurücksetzen-bestätigungs-container")
+let passwordText = document.getElementById("password-falsch-text");
+let dateiGröße = document.getElementsByClassName("datei-größe");
+let bestätigungsButton = document.getElementById("bestätigen-button")
 
 
 function bestätigen() {
 
-    const storedPassword = "iservAdmin";
-    const inputPassword = document.getElementById("password-input").value;
-    const LetzteÄnderung = document.getElementsByClassName("datum")
+    let storedPassword = "iservAdmin";
+    let inputPassword = document.getElementById("password-input").value;
+    let LetzteÄnderung = document.getElementsByClassName("datum")
 
 
     const jetzt = new Date();
@@ -114,4 +114,65 @@ function profilZurücksetzenBesätigung(){
         bestätigungsContainer.style.visibility = "hidden";
         passwordText.style.visibility="hidden";
     }
+}
+
+
+//hier sind alle funktionen die für die gruppen ansicht zuständig sind\\
+
+let eigeneDateinButton =document.getElementById("eigene-datein-button")
+let gruppenDateinButton = document.getElementById("gruppen-datein-button")
+let coudDateinButton = document.getElementById("cloud-datein-button")
+
+let filesDateinSpalte  = document.getElementById("files-datein-spalte")    
+let groupsDateinSpale = document.getElementById("groups-datein-spalte")
+let tempDateinSpalte = document.getElementById("temp-datein-spalte")
+let windowsDateinSpalte = document.getElementById("windows-datein-spalte")
+
+let filesName = document.getElementById("files-name")
+let groupsName = document.getElementById("groups-name")
+let tempName = document.getElementById("temp-name")
+let windowsName =document.getElementById("windows-name")
+
+let dateiType = document.getElementsByClassName("datei-type")
+
+
+function eigeneDateinEinblenden(){
+
+    gruppenDateinButton.reset
+
+    eigeneDateinButton.style.transform="scale(107%)"
+    eigeneDateinButton.style.backgroundColor="rgba(2, 141, 255, 0.301)"
+    eigeneDateinButton.style.borderBottom="solid 2px rgb(2, 238, 255)"
+
+    windowsDateinSpalte.style.visibility="visible"
+
+    filesName.innerHTML="Files"
+    groupsName.innerHTML="Groups"
+    tempName.innerHTML="Temp"
+    
+    for (let i=0; i<dateiType.length; i++){
+        dateiType[i].innerHTML="Ordner"
+    }
+
+}
+
+
+function gruppenEinblenden(){
+
+    gruppenDateinButton.style.transform="scale(107%)"
+    gruppenDateinButton.style.backgroundColor="rgba(2, 141, 255, 0.301)"
+    gruppenDateinButton.style.borderBottom="solid 2px rgb(2, 238, 255)"
+
+windowsDateinSpalte.style.transition="0s"
+windowsDateinSpalte.style.visibility="hidden"
+
+filesName.innerHTML="D-E 9D"
+groupsName.innerHTML="M-E 9D"
+tempName.innerHTML="E-E 9D"
+
+for (let i=0; i< dateiType.length; i++){
+    
+    dateiType[i].innerHTML="Gruppen Ordner"
+}
+
 }
