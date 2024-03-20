@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iserv</title>
-    <link rel="stylesheet" href="css/impressum.css">
-    <link rel="shortcut icon" type="x-icon" href="bilder/tab icon.png">
+    <link rel="stylesheet" href="css/sicherheit.css">
+    <link rel="shortcut icon" type="x-icon" href="bilder/tap icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div id="body">
+< id="body">
 
 
 <div id="nav-bar-container">
@@ -25,14 +25,16 @@
         <details id="account-details">
 
             <summary>
-                <img id="profile-bild" src="bilder/profile-bild.svg">
+                <img id="profile-bild" src="bilder/user icon .png">
                 <span id="username">mr_crash</span> 
                 <img id="dropdown-pfeil-bild" src="bilder/dropdown-pfeil.png">
 
             </summary>
+            
             <div id="underline" >
 
             </div>
+
             <a><img src="bilder/Pfrofile bild.png" ><span>profile</span></a>
             <a><img src="bilder/benachrichtigung icon.png"><span>Benachrichtigungen</span></a>
             <a><img src="bilder/einstellungen icon.png"> <span>Einstellungen</span></a>
@@ -42,15 +44,15 @@
 
         </details>
 
-        <input  id="modul-suchfeld" type="search" placeholder="Module filtern">
+        <input  id="modul-suchfeld" type="search" placeholder="Module filtern" onkeyup="search()">
    
         <span id="Schnellzugriff-überschrift">Schnellzugriff</span>
 
-        <a class="link-container" href="e-mail.html"> <img src="bilder/email.png"><span>E-mail</span></a>
+        <a class="link-container" data-name="emal-link-container" href="e-mail.html"> <img src="bilder/email.png"><span>E-mail</span></a>
         <a class="link-container" href="Datein.html"> <img src="bilder/datein.png"><span>Datein</span></a>
         <a class="link-container" href=""> <img src="bilder/kalender.png"><span>kalender</span></a>
         <a class="link-container" href=""> <img src="bilder/messenger.png"><span>Messenger</span></a>
-        <a id="stundenplan-link-container" class="link-container" href="StundenPlan.html"> <img src="bilder/stundenplan.png"><span>Stundenplan</span></a>
+        <a class="link-container" href="StundenPlan.html"> <img src="bilder/stundenplan.png"><span>Stundenplan</span></a>
         <a class="link-container" href=""> <img src="bilder/hilfe.png"><span>IServ-Hilfe</span></a>
 
        <details id="alle-module">
@@ -81,9 +83,8 @@
 
        </details>
 
-
        <a id="impressum-link" href="impressum.html">Impressum</a>
-        
+
     </div>
 
      <div id="nav-bar-container-top">
@@ -97,34 +98,15 @@
             <span>Startseite</span>
           </a>
 
-          <a id="impressum-icon" href="impressum.html">
+          <a id="sicherheit-icon">
             <img src="bilder/doppel pfeil rechts.png">
-            <span>impressum</span>
+            <span>Sicherheit</span>
           </a>
 
           <a href="https://doku.iserv.de/web/" id="hilfe-button">Hilfe</a>
 
      </div>
- 
 
-    <div id="start-seiten-haupt-container">
-
-        
-            <h1 id="überschrift">IMPRESSUM</h1>
-
-     
-
-    <span id="impressum-text">
-        Diese Website dient lediglich als Konzept und ist nicht für den allgemeinen Gebrauch bestimmt. Sie wurde als Beispiel dafür erstellt, wie eine IServ-Website aussehen könnte. Beachten Sie, dass es sich hierbei nicht um die offizielle IServ-Website handelt. <a href="https://ge-hoerstel.de/iserv/">ge-hoerstel.de</a>   
-    
-    </span>
-
-     
-
-
-    </div>
-
-    <script src="javaScript/index.js"></script>
-    <script src="javaScript/impressum.js"></script>
+     <script src="javaScript/sicherheit.js"></script>
 </body>
 </html>
