@@ -1,14 +1,24 @@
-function login() {
+function login(event) {
+    event.preventDefault();
 
     const loginErfolgreich =document.getElementById("login-erfolgreich");
     const loginFehlgeschlagen = document.getElementById("login-fehlgeschlagen");
 
-    const username = inputUsername
     const inputUsername = document.getElementById("inputUsername").value;
     const inputPassword = document.getElementById("inputPassword").value;
 
-    const storedUsername = "mr_crash";
-    const storedPassword = "iservAdmin";
+    const angemeldedBleiben = document.getElementById("angemelded-bleiben").checked
+   
+
+    if(angemeldedBleiben){
+        localStorage.setItem("username",inputUsername)
+        localStorage.setItem("password",inputPassword)
+        localStorage.setItem("angemelded bleiben",true)
+    }
+
+
+    const storedUsername = localStorage.getItem("username")
+    const storedPassword = localStorage.getItem("password")
 
     console.log("Eingabedaten:", inputUsername, inputPassword);
     console.log("Gespeicherte Daten:", storedUsername, storedPassword);
