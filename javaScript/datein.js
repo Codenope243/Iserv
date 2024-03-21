@@ -135,14 +135,11 @@ let windowsName =document.getElementById("windows-name")
 
 let dateiType = document.getElementsByClassName("datei-type")
 
+let cloudContainer =document.getElementById("cloud-container")
 
 function eigeneDateinEinblenden(){
 
-    gruppenDateinButton.reset
-
-    eigeneDateinButton.style.transform="scale(107%)"
-    eigeneDateinButton.style.backgroundColor="rgba(2, 141, 255, 0.301)"
-    eigeneDateinButton.style.borderBottom="solid 2px rgb(2, 238, 255)"
+    cloudContainer.remove()
 
     windowsDateinSpalte.style.visibility="visible"
 
@@ -159,9 +156,7 @@ function eigeneDateinEinblenden(){
 
 function gruppenEinblenden(){
 
-    gruppenDateinButton.style.transform="scale(107%)"
-    gruppenDateinButton.style.backgroundColor="rgba(2, 141, 255, 0.301)"
-    gruppenDateinButton.style.borderBottom="solid 2px rgb(2, 238, 255)"
+cloudContainer.style.visibility="hidden"
 
 windowsDateinSpalte.style.transition="0s"
 windowsDateinSpalte.style.visibility="hidden"
@@ -175,4 +170,10 @@ for (let i=0; i< dateiType.length; i++){
     dateiType[i].innerHTML="Gruppen Ordner"
 }
 
+}
+
+
+function cloudEinblenden(){
+
+    cloudContainer.style.visibility="visible"
 }

@@ -598,6 +598,17 @@ padding-left: 9%;
 th{
  border-radius: 0px;
 }
+
+/* ab hier ist die cloud*/
+
+#cloud-container{
+    width: 98%;
+    height: 105%;
+    background-color: red;
+    visibility: hidden;
+}
+
+
 /* hier sind die anpassungen an verschidenne bildschirme*/
 
 /*Mobile*/
