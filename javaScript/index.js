@@ -1,9 +1,9 @@
-function login(event) {
-    event.preventDefault();
+function login() {
 
     const loginErfolgreich =document.getElementById("login-erfolgreich");
     const loginFehlgeschlagen = document.getElementById("login-fehlgeschlagen");
 
+    const username = inputUsername
     const inputUsername = document.getElementById("inputUsername").value;
     const inputPassword = document.getElementById("inputPassword").value;
 
