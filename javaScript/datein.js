@@ -67,7 +67,7 @@ function bestätigen() {
     const ganzesDatum = tag + '.' + monat + '.' + jahr + ' ' +stunde+ ':'+minute;
     
     console.log(ganzesDatum);
-
+    
 
     console.log("Eingabedaten:",inputPassword);
     console.log("Gespeicherte Daten:",storedPassword);

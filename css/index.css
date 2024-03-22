@@ -428,8 +428,13 @@ z-index: 0;
     width: 95%;
 }
 
-#stundenplan-tag {
-    margin-bottom: 10px;
+#stundenplan-datum-container{
+    white-space: nowrap;
+    width: 100px;
+}
+
+#stundenplan-tag{
+    white-space: nowrap;
 }
 
 #stundenplan th{

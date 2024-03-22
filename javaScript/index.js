@@ -7,18 +7,8 @@ function login(event) {
     const inputUsername = document.getElementById("inputUsername").value;
     const inputPassword = document.getElementById("inputPassword").value;
 
-    const angemeldedBleiben = document.getElementById("angemelded-bleiben").checked
-   
-
-    if(angemeldedBleiben){
-        localStorage.setItem("username",inputUsername)
-        localStorage.setItem("password",inputPassword)
-        localStorage.setItem("angemelded bleiben",true)
-    }
-
-
-    const storedUsername = localStorage.getItem("username")
-    const storedPassword = localStorage.getItem("password")
+    const storedUsername = "mr_crash"
+    const storedPassword = "iservAdmin"
 
     console.log("Eingabedaten:", inputUsername, inputPassword);
     console.log("Gespeicherte Daten:", storedUsername, storedPassword);
@@ -29,11 +19,11 @@ function login(event) {
         loginFehlgeschlagen.style.top="-8%";
         loginErfolgreich.style.top="5%";
         
-          
-
         setTimeout(() => {
             window.location.href = "index.html";
         }, 1200);
+
+
        
     } else {
         console.log("Daten stimmen nicht überein");
@@ -87,3 +77,16 @@ function navbarEinAusKlappen() {
 
 
 }
+
+    const datum =document.getElementById("datum")
+
+const jetzt = new Date();
+    const tag = jetzt.getDate();
+    const monat = jetzt.getMonth() + 1; // Monate sind 0-basiert, daher +1
+    const jahr = jetzt.getFullYear();
+    const stunde = jetzt.getHours();
+    const minute = jetzt.getMinutes();
+
+    datum = tag + '.' + monat + '.' + jahr + ' ' +stunde+ ':'+minute;
+    
+    console.log(ganzesDatum);
