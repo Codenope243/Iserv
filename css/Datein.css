@@ -326,7 +326,7 @@ z-index: 0;
 }
 
 
-#datein-hader2{
+#datein-header2{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -605,7 +605,6 @@ th{
     width: 98%;
     height: 105%;
     background-color: red;
-    visibility: hidden;
 }
 
 

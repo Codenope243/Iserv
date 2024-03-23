@@ -135,11 +135,15 @@ let windowsName =document.getElementById("windows-name")
 
 let dateiType = document.getElementsByClassName("datei-type")
 
+let dateinManager = document.getElementById("datein-manager")
+let dateinHeader2 = document.getElementById("datein-header2")
 let cloudContainer =document.getElementById("cloud-container")
+cloudContainer.replaceWith(dateinManager)
 
 function eigeneDateinEinblenden(){
 
-    cloudContainer.remove()
+    dateinHeader2.style.visibility="visible"
+    cloudContainer.replaceWith(dateinManager)
 
     windowsDateinSpalte.style.visibility="visible"
 
@@ -151,12 +155,14 @@ function eigeneDateinEinblenden(){
         dateiType[i].innerHTML="Ordner"
     }
 
+
 }
 
 
 function gruppenEinblenden(){
 
-cloudContainer.style.visibility="hidden"
+    dateinHeader2.style.visibility="visible"
+cloudContainer.replaceWith(dateinManager)
 
 windowsDateinSpalte.style.transition="0s"
 windowsDateinSpalte.style.visibility="hidden"
@@ -172,8 +178,12 @@ for (let i=0; i< dateiType.length; i++){
 
 }
 
-
-function cloudEinblenden(){
-
-    cloudContainer.style.visibility="visible"
+function cloudEinblenden() {
+    dateinHeader2.style.visibility = "hidden";
+    if (dateinHeader2) {
+        setTimeout(function() {
+            dateinManager.replaceWith(cloudContainer);
+        }, 200); // Verzögerung von 200 Millisekunden
+    }
+   
 }
