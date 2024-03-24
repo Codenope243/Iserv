@@ -142,6 +142,7 @@ cloudContainer.replaceWith(dateinManager)
 
 function eigeneDateinEinblenden(){
 
+    dateinHeader2.style.position=""
     dateinHeader2.style.visibility="visible"
     cloudContainer.replaceWith(dateinManager)
 
@@ -160,7 +161,7 @@ function eigeneDateinEinblenden(){
 
 
 function gruppenEinblenden(){
-
+    dateinHeader2.style.position=""
     dateinHeader2.style.visibility="visible"
 cloudContainer.replaceWith(dateinManager)
 
@@ -180,10 +181,15 @@ for (let i=0; i< dateiType.length; i++){
 
 function cloudEinblenden() {
     dateinHeader2.style.visibility = "hidden";
-    if (dateinHeader2) {
+
+    setTimeout(function(){
+        dateinHeader2.style.position="absolute"
+    },210)
+
+   
         setTimeout(function() {
             dateinManager.replaceWith(cloudContainer);
-        }, 200); // Verzögerung von 200 Millisekunden
-    }
+        }, 200); 
+    
    
 }

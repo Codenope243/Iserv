@@ -602,11 +602,65 @@ th{
 /* ab hier ist die cloud*/
 
 #cloud-container{
-    width: 98%;
-    height: 105%;
-    background-color: red;
+    display: flex;
+    width: 100%;
+    height: 112%;
+    background-color: rgba(0, 247, 255, 0.096);
 }
 
+#cloud-nav-bar-container{
+    left: 0px;
+    height: 96%;
+    width: 218px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    background:rgba(255, 255, 255, 0.034);
+    gap: 16px;
+    transition: left 0.4s ease-in-out;
+}
+
+.cloud-nav-bar-buttons{
+    display: flex;
+    align-items: center;
+    width: 110%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgba(224, 224, 224, 0.829);
+}
+
+.cloud-nav-bar-buttons img{
+    height: 32px;
+    margin-right: 20px;
+}
+
+.cloud-nav-bar-buttons:hover{
+    background-color: rgba(134, 134, 134, 0.048);
+}
+
+#freigeben-drop-down-menu summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 59px;
+    padding-right: 59px;
+    height: 40px;
+}
+
+#freigeben-drop-down-menu{
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(185, 185, 185, 0.021);
+    padding-bottom: 5px;
+}
+
+#freigeben-drop-down-menu img{
+    height: 32px;
+}
 
 /* hier sind die anpassungen an verschidenne bildschirme*/
 
