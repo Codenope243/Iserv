@@ -644,23 +644,51 @@ th{
 
 #freigeben-drop-down-menu summary{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-left: 59px;
-    padding-right: 59px;
+   margin-right:40px;
+    padding-right: 39px;
     height: 40px;
 }
 
 #freigeben-drop-down-menu{
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
-    background-color: rgba(185, 185, 185, 0.021);
+    max-height: 40px;
+    min-height: 4px;
+    padding-left: 2px;
+    padding-top: 5px;
     padding-bottom: 5px;
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+}
+
+#freigeben-drop-down-menu[open]{
+    max-height: 250px;
+    min-height: 250px;
+}
+
+#freigeben-drop-down-menu:hover{
+    background-color: rgba(185, 185, 185, 0.021);
+}
+
+#freigeben-drop-down-menu:hover .cloud-nav-bar-buttons{
+    width: 99%;
 }
 
 #freigeben-drop-down-menu img{
     height: 32px;
 }
+
+#freigaben-drop-down-pfeil{
+    transform: rotate(-90deg);
+    transition: ease-in-out 0.5s;
+    margin-left: 20px;
+}
+
+#freigeben-drop-down-menu[open] summary #freigaben-drop-down-pfeil {
+    transform: rotate(360deg);
+}
+
 
 /* hier sind die anpassungen an verschidenne bildschirme*/
 
