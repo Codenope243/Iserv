@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100svh;
     margin: 0;
-    background: linear-gradient(45deg, #063250, #184199, #165bc4);
+    background:black;
     font-family: 'Varela Round', sans-serif;
     overflow: hidden;
 }
@@ -23,6 +23,10 @@ form{
     backdrop-filter: blur(50px);
     border-radius: 10px;
     box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.281) ;
+}
+
+#überschrift{
+    color: white;
 }
 
 input,button{
