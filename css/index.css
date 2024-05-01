@@ -428,9 +428,14 @@ z-index: 0;
     width: 95%;
 }
 
+.stundenplan-daten{
+    padding: 7px;
+}
+
 #stundenplan-datum-container{
     white-space: nowrap;
     width: 100px;
+    text-align: center;
 }
 
 #stundenplan-tag{
@@ -464,36 +469,15 @@ z-index: 0;
 .stunden-uhr-zeit{
    padding-left: 4%;
    padding-right: 3%;
-
 }
 
 .stunde{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 125px;
-    
+    min-height: 180px;
 }
 
-#stunde2{
-    height: 140px;
-}
-
-#stunde3{
-    height: 145px;
-}
-
-#stunde4{
-    height: 148px;
-}
-
-#stunde6{
-    height: 180px;
-}
-
-#stunde7{
-    height: 200px;
-}
 
 /* hier endet der stundenplan */
 
@@ -594,6 +578,10 @@ z-index: 0;
      
      }
 
+     .stunde{
+        min-height: 320px;
+     }
+
     #nav-bar-container{
         left: -260px;
     }
@@ -661,27 +649,7 @@ z-index: 0;
 
      .stunde{
         min-height: 250px;
-    }
-    
-    #stunde2{
-        height: 290px;
-    }
-    
-    #stunde3{
-        height: 290px;
-    }
-    
-    #stunde4{
-        height: 290px;
-    }
-    
-    #stunde6{
-        height: 380px;
-    }
-    
-    #stunde7{
-        height: 290px;
-    }
+     }
 
 }
 

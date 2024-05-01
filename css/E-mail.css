@@ -320,6 +320,7 @@ height: 30px;
     width: 120px;
     max-height: 30px;
     margin-left: 80em;
+    cursor: pointer;
 }
 
 #postfächer-dropdown-menu[open]{
@@ -340,8 +341,15 @@ height: 30px;
 height: 25px;
 }
 
+.postfächer-dropdown-menu-data:hover{
+    background-color: rgba(97, 171, 231, 0.432);
+}
 
-
+#e-mail-container{
+    flex-grow: 1;
+    height: 90%;
+    background-color: red;
+}
 
 /* hier sind die anpassungen an verschidenne bildschirme*/
 
