@@ -8,7 +8,7 @@ function login(event) {
     const inputUsername = document.getElementById("inputUsername").value;
     const inputPassword = document.getElementById("inputPassword").value;
 
-    const storedUsername = "mr_crash"
+    const storedUsername = "Codenope243"
     const storedPassword = "iservAdmin"
 
     console.log("Eingabedaten:", inputUsername, inputPassword);

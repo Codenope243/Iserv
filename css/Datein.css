@@ -107,7 +107,7 @@ body{
 #dropdown-pfeil-bild{
     position: relative;
     width:18px ;
-    left: 30px;
+    left: 10;
     transform: rotate(90deg);
     transition: 0.5s ease-in-out;
 }
@@ -282,7 +282,7 @@ z-index: 0;
 #start-seiten-haupt-container {
     gap: 20px;
     padding: 15px;
-    background-color: rgba(128, 128, 128, 0.075);
+    background-color: rgba(128, 128, 128, 0.0);
     width: calc(97.5svw - 265px); /* 100% abzüglich der Breite von #nav-bar-container */
     height: calc(100svh - 60px); /* 100% abzüglich der Höhe von #nav-bar-container-top */
     margin-top: 8svh; 
