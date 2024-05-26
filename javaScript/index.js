@@ -8,7 +8,7 @@ function login(event) {
     const inputUsername = document.getElementById("inputUsername").value;
     const inputPassword = document.getElementById("inputPassword").value;
 
-    const storedUsername = "Codenope243"
+    const storedUsername = "mr_crash"
     const storedPassword = "iservAdmin"
 
     console.log("Eingabedaten:", inputUsername, inputPassword);
@@ -80,29 +80,38 @@ function navbarEinAusKlappen() {
 }
 
 
-// /*
+
 const stunde1 = document.getElementById("stunde1")
 
     const datum =document.getElementById("stundenplan-datum")
 
     const jetzt = new Date();
-    const tag = jetzt.getDate();
+    let tag = jetzt.getDate();
     const monat = jetzt.getMonth() + 1; // Monate sind 0-basiert, daher +1
     const jahr = jetzt.getFullYear();
-
-    datum.innerHTML = tag + '.' + monat + '.' + jahr;
 
 
     const anzeigeTag = document.getElementById("stundenplan-tag")
 
     const today = new Date();
     const options = { weekday: 'long' };
-    const dayText = today.toLocaleDateString('de-DE', options);
+    let dayText = today.toLocaleDateString('de-DE', options);
+
+
+    if(dayText === "Sonntag"){
+        dayText = "Montag"
+        tag = tag + 1
+        console.log(dayText)
+    }else if(dayText ==="Samstag"){
+        dayText = "Montag"
+        tag = tag + 2
+        console.log(dayText)
+    }
 
     anzeigeTag.innerHTML = dayText
-    console.log(dayText); 
+    datum.innerHTML = tag + '.' + monat + '.' + jahr;
 
-// */
+
 
 const stundenPlanBibliothek = {
     religion: {

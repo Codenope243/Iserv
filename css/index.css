@@ -523,6 +523,7 @@ z-index: 0;
     height: 10%;
     border:  solid 1px rgb(36, 143, 185);
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #termine-container-header{
@@ -562,6 +563,7 @@ z-index: 0;
         width: calc(98svw - 20px);
         flex-wrap: wrap;
         padding: 8px;
+       
     }
 
     #E-mail-und-news-container{
@@ -570,6 +572,7 @@ z-index: 0;
 
     #stundenplan-container{
     width: 150%;
+    height: 244vh;
     }
 
     .stunden-uhr-zeit{
@@ -597,6 +600,7 @@ z-index: 0;
     #E-mails-senden-und-empfangen-link{
         padding-top: 0px;
     } 
+
 }
 @media screen and (min-width:767px) and (max-width:1044px) {
     #start-seiten-haupt-container{
@@ -638,7 +642,7 @@ z-index: 0;
       } 
 
 #stundenplan-container{
-    height: 310vh;
+    height: 217vh;
 }
 
       .stunden-uhr-zeit{
