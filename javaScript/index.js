@@ -106,8 +106,6 @@ const stunde1 = document.getElementById("stunde1")
         dayText = "Montag"
         tag = tag + 2
         console.log(dayText)
-    }
-
     anzeigeTag.innerHTML = dayText
     datum.innerHTML = tag + '.' + monat + '.' + jahr;
 
@@ -316,7 +314,7 @@ const stundenPlanBibliothek = {
         klasse:"09d",
         abkürzungKurs0: "SP",
         lehrerKurs0: "(DOE)",
-        raumKurs0: "GSH 1", 
+        raumKurs0: "ASA", 
     },
 
     english:{
@@ -405,6 +403,37 @@ const stundenPlanBibliothek = {
         abkürzungKurs7: "LZ 7-10",
         lehrerKurs7: "(COR)",
         raumKurs7: "0.82 9d", 
+    },
+
+    kunst:{
+        klasse:"09d",
+        abkürzungKurs0:"KU",
+        lehrerKurs0:"BIS",
+        raumKurs0:"0.62 KU",
+    },
+
+    bio:{
+        klasse:"9d",
+        abkürzungKurs0:"BI",
+        lehrerKurs0:"BRE",
+        raumKurs0:"2.58",
+    },
+
+    hauswirtschaft:{
+        klasse:"10d",
+        raumKurs0:"HW",
+        lehrerKurs0:"DIR",
+        raumKurs0:"1.34 KÜ",
+
+        klasse:"10d",
+        raumKurs1:"HW",
+        lehrerKurs1:"STT",
+        raumKurs1:"1.60 KÜ",
+
+        klasse:"10d",
+        raumKurs2:"TC",
+        lehrerKurs2:"SHG",
+        raumKurs2:"0.56 TC",
     }
 };
 
@@ -446,38 +475,38 @@ let fach4 = "";
 let fach6 = "";
 let fach7 = "";
 if (dayText === "Montag") {
-    fach1 = "WP";
-    fach2 = "chemie";  
-    fach3 = "deutsch"
-    fach4 = "english"
-    fach6 = "musik"
-    fach7 = "GL"
-} else if (dayText === "Dienstag") {
-    fach1 = "deutsch";
-    fach2 = "mathe";  
-    fach3 = "religion"
-    fach4 = "english"
-    fach6 = "AGlernzeit"
-}else if (dayText === "Mittwoch") {
-    fach1 = "EGS";
-    fach2 = "GL";  
-    fach3 = "mathe"
-    fach4 = "lernzeit"
-    fach6 = "english"
-    fach7 = "lernzeit"
-}else if (dayText === "Donnerstag") {
-    fach1 = "deutsch";
-    fach2 = "religion";  
-    fach3 = "mathe"
-    fach4 = "chemie"
-    fach6 = "WP"
-    fach7 = "EGS"
-}else if (dayText === "Freitag") {
-    fach1 = "physik";
-    fach2 = "EWTOlernzeit";  
+    fach1 = "kunst";
+    fach2 = "lernzeit";  
     fach3 = "sport"
     fach4 = "sport"
-    fach6 = "GL"
+    fach6 = "religion"
+    fach7 = "deutsch"
+} else if (dayText === "Dienstag") {
+    fach1 = "mathe";
+    fach2 = "deutsch";  
+    fach3 = "english"
+    fach4 = "bio"
+    fach6 = "AGlernzeit"
+}else if (dayText === "Mittwoch") {
+    fach1 = "lernzeit";
+    fach2 = "GL";  
+    fach3 = "mathe"
+    fach4 = "EGS"
+    fach6 = "hauswirtschaft"
+    fach7 = "hauswirtschaft"
+}else if (dayText === "Donnerstag") {
+    fach1 = "deutsch";
+    fach2 = "mathe";  
+    fach3 = "WP"
+    fach4 = "WP"
+    fach6 = "Chemie"
+    fach7 = "english"
+}else if (dayText === "Freitag") {
+    fach1 = "english";
+    fach2 = "chemie";  
+    fach3 = "mathe"
+    fach4 = "GL"
+    fach6 = "Fegs"
 }
 
 const stunde1Block = document.getElementById("stunde 1 block");
