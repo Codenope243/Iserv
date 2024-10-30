@@ -52,7 +52,7 @@ let bestätigungsButton = document.getElementById("bestätigen-button")
 
 function bestätigen() {
 
-    let storedPassword = "iservAdmin";
+    let storedPassword = "aim";
     let inputPassword = document.getElementById("password-input").value;
     let LetzteÄnderung = document.getElementsByClassName("datum")
 
